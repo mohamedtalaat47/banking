@@ -1,0 +1,52 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar{
+background-color: #1a1a1a;
+color: whitesmoke;
+}
+
+.home{
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 657px;
+    width: 100%;
+    z-index: 1;
+}
+
+.layout{
+    background-color: black;
+    z-index: 5;
+    opacity: 60%;
+    height: 657px;
+    width: 100%;
+}
+
+.title-div{
+    padding-top: 250px;
+}
+
+.title-div h1{
+    color: white;
+}
+
+.title-div button{
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+.customers-table{
+    margin: 50px;
+    border: 1px #dddddd solid;
+}
+
+.customer-card{
+    margin: 50px;
+    margin-top: 150px;
+}
+
+.customer-card h5{
+    padding-bottom: 15px;
+}
