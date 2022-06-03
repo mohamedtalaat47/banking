@@ -12,6 +12,8 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -28,13 +30,14 @@
     <link href="/css/main.css" rel="stylesheet">
 </head>
 
-<body style="background-image: url('../images/bg.png');">
+<body>
     <div id="app">
         <nav class="navbar">
             <a style="color: white" href="{{route('/')}}"><span class="navbar-brand mb-0 h1">{{ config('app.name', 'Laravel') }}</span></a>
         </nav>
 
         <main class="">
+            @include('layout.flash')
             @yield('content')
         </main>
     </div>

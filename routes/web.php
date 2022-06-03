@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('customers', 'App\Http\Controllers\CustomerController@index')->name('customer.index');
 
 Route::get('customer/{id}', 'App\Http\Controllers\CustomerController@show')->name('customer.show');
+
+Route::get('customer/{sender}/transfer/{reciever}', 'App\Http\Controllers\CustomerController@transfer_view')->name('customer.transfer.view');
+
+Route::post('customer/{sender}/transfer/{reciever}', 'App\Http\Controllers\CustomerController@transfer')->name('customer.transfer');

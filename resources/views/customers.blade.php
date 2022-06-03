@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('title', 'Home')
+@section('title', 'Customers list')
 
 @section('content')
     <div class="customers-table">

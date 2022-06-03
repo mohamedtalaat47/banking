@@ -1,13 +1,13 @@
-*{
+* {
     font-family: 'Open Sans', sans-serif;
 }
 
-.navbar{
-background-color: #1a1a1a;
-color: whitesmoke;
+.navbar {
+    background-color: #1a1a1a;
+    color: whitesmoke;
 }
 
-.home{
+.home {
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,7 +16,7 @@ color: whitesmoke;
     z-index: 1;
 }
 
-.layout{
+.layout {
     background-color: black;
     z-index: 5;
     opacity: 60%;
@@ -24,29 +24,49 @@ color: whitesmoke;
     width: 100%;
 }
 
-.title-div{
+.title-div {
     padding-top: 250px;
 }
 
-.title-div h1{
+.title-div h1 {
     color: white;
 }
 
-.title-div button{
+.title-div button {
     margin-top: 40px;
     font-weight: 600;
 }
 
-.customers-table{
+.customers-table {
     margin: 50px;
     border: 1px #dddddd solid;
 }
 
-.customer-card{
+.customer-card {
     margin: 50px;
-    margin-top: 150px;
+    margin-top: 60px;
 }
 
-.customer-card h5{
+.customer-card h5 {
     padding-bottom: 15px;
+}
+
+.modal-backdrop.fade {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.modal-backdrop.in {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.modal-backdrop.fade {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.modal-backdrop.fade.in {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
 }
