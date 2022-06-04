@@ -39,12 +39,32 @@
                     <input class="form-control w-25 m-auto" type="integer" name="balance">
 
                     @if ($errors->any())
-                                @foreach ($errors->all() as $error)
-                                    <p style="color: red">{{ $error }}</p>
-                                @endforeach
+                        @foreach ($errors->all() as $error)
+                            <p style="color: red">{{ $error }}</p>
+                        @endforeach
                     @endif
 
-                    <button class="btn btn-success mt-3" type="submit" name="submit">Transfer</button>
+                    <button type="button" class="btn btnModal btn-success mt-3">Transfer</button>
+
+                    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Confirmation</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>You are about to make a transaction!</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-success" type="submit" name="submit">Confirm</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </form>
@@ -52,5 +72,12 @@
 
     </div>
 
+    <script>
+        $(document).ready(function() {
+            $(".btnModal").click(function() {
+                $("#myModal").modal('show');
+            });
+        });
+    </script>
 
 @endsection

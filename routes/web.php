@@ -24,3 +24,5 @@ Route::get('customer/{id}', 'App\Http\Controllers\CustomerController@show')->nam
 Route::get('customer/{sender}/transfer/{reciever}', 'App\Http\Controllers\CustomerController@transfer_view')->name('customer.transfer.view');
 
 Route::post('customer/{sender}/transfer/{reciever}', 'App\Http\Controllers\CustomerController@transfer')->name('customer.transfer');
+
+Route::get('transactions', 'App\Http\Controllers\TransactionController@index')->name('transaction.index');
